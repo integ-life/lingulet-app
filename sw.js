@@ -1,5 +1,5 @@
 /* global self, caches, fetch, URL, AbortController, setTimeout, clearTimeout, Response */
-const CACHE_VERSION = "lingulet-shell-v1";
+const CACHE_VERSION = "lingulet-shell-v2";
 const scopeRoot = new URL("./", self.registration.scope).href;
 
 self.addEventListener("install", (event) => {
