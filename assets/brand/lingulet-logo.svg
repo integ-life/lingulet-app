@@ -1,7 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
-  <title id="title">Lingulet mark</title>
-  <desc id="desc">A warm black conversation page containing a white L, finished by a vermilion turning page.</desc>
-  <path fill="#25221d" d="M104 72h304a56 56 0 0 1 56 56v224a56 56 0 0 1-56 56H282l-86 64 20-64H104a56 56 0 0 1-56-56V128a56 56 0 0 1 56-56Z"/>
-  <path fill="#fffdf7" d="M150 142h72v168h142v62H150V142Z"/>
-  <path fill="#b43b24" d="M250 142h114v62H250l34-31-34-31Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Lingulet mark</title><desc id="desc">The Integ.Life leaf with Lingulet's warm black, white L, and vermilion page-turn badge.</desc>
+  <rect width="512" height="512" rx="112" fill="#f1eee6"/><circle cx="244" cy="244" r="160" fill="#274b62"/>
+  <path d="M136 288c19-103 98-167 219-179-18 107-93 198-219 179Z" fill="#fffdf7"/><path d="M136 326c68-68 131-131 207-203" fill="none" stroke="#fffdf7" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="390" cy="390" r="78" fill="#25221d" stroke="#f1eee6" stroke-width="18"/>
+  <path d="M354 348h22v64h51v20h-73Z" fill="#fffdf7"/>
+  <path d="M386 348h42v20h-42l13-10-13-10Z" fill="#b43b24"/>
 </svg>
