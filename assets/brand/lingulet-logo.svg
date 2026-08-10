@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Lingulet mark</title>
+  <desc id="desc">A warm black conversation page containing a white L, finished by a vermilion turning page.</desc>
+  <path fill="#25221d" d="M104 72h304a56 56 0 0 1 56 56v224a56 56 0 0 1-56 56H282l-86 64 20-64H104a56 56 0 0 1-56-56V128a56 56 0 0 1 56-56Z"/>
+  <path fill="#fffdf7" d="M150 142h72v168h142v62H150V142Z"/>
+  <path fill="#b43b24" d="M250 142h114v62H250l34-31-34-31Z"/>
+</svg>

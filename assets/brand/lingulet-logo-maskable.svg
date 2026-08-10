@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Lingulet maskable icon</title>
+  <desc id="desc">The transparent Lingulet mark with extra safe space for adaptive icon masks.</desc>
+  <g transform="translate(76.8 76.8) scale(.7)">
+    <path fill="#25221d" d="M104 72h304a56 56 0 0 1 56 56v224a56 56 0 0 1-56 56H282l-86 64 20-64H104a56 56 0 0 1-56-56V128a56 56 0 0 1 56-56Z"/>
+    <path fill="#fffdf7" d="M150 142h72v168h142v62H150V142Z"/>
+    <path fill="#b43b24" d="M250 142h114v62H250l34-31-34-31Z"/>
+  </g>
+</svg>
