@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="description" content="Someone completed a real, assessed Vietnamese lesson. Start the same five-minute first lesson—no sign-in first." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Try a real Vietnamese lesson · Lingulet" />
+    <meta property="og:description" content="Someone completed a real, assessed Vietnamese lesson. Start the same five-minute first lesson—no sign-in first." />
+    <meta property="og:url" content="https://lang.integ.life/share/en/vi/5/lesson/index.html" />
+    <meta property="og:image" content="https://lang.integ.life/og-lingulet.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Vietnamese conversation card with a verified check mark" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Try a real Vietnamese lesson · Lingulet" />
+    <meta name="twitter:description" content="Someone completed a real, assessed Vietnamese lesson. Start the same five-minute first lesson—no sign-in first." />
+    <meta name="twitter:image" content="https://lang.integ.life/og-lingulet.png" />
+    <title>Try a real Vietnamese lesson · Lingulet</title>
+    <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5f0e6;color:#24211d;font:18px/1.5 system-ui,sans-serif;text-align:center}main{max-width:34rem;padding:2rem}a{color:#0f625e}</style>
+  </head>
+  <body>
+    <main><p>Opening the five-minute Vietnamese first lesson…</p><p><a id="continue" href="../../../../../#/course-preview?target=vi&unit=1">Continue to the lesson</a></p></main>
+    <script>
+      const incoming = new URLSearchParams(window.location.search);
+      const ref = incoming.get("ref");
+      const share = incoming.get("share");
+      const destination = new URL("../../../../../", window.location.href);
+      const route = new URLSearchParams({ target: "vi", unit: "1" });
+      route.set("sharedUnit", "5");
+      if (ref && /^[a-zA-Z0-9-]{1,64}$/.test(ref)) {
+        route.set("challenge", "1");
+        route.set("ref", ref);
+        if (share && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(share)) route.set("share", share);
+      }
+      destination.search = "";
+      destination.hash = "/course-preview?" + route.toString();
+      document.getElementById("continue").href = destination.href;
+      window.location.replace(destination.href);
+    </script>
+  </body>
+</html>

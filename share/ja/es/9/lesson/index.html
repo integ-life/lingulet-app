@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,follow" />
+    <meta name="description" content="実際に採点されるスペイン語レッスを完了した人がいます。ログイン前でも、同じ5分間の初回レッスンから始められます。" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="実際のスペイン語レッスンを試す · Lingulet" />
+    <meta property="og:description" content="実際に採点されるスペイン語レッスを完了した人がいます。ログイン前でも、同じ5分間の初回レッスンから始められます。" />
+    <meta property="og:url" content="https://lang.integ.life/share/ja/es/9/lesson/index.html" />
+    <meta property="og:image" content="https://lang.integ.life/og-lingulet.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="スペイン語 conversation card with a verified check mark" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="実際のスペイン語レッスンを試す · Lingulet" />
+    <meta name="twitter:description" content="実際に採点されるスペイン語レッスを完了した人がいます。ログイン前でも、同じ5分間の初回レッスンから始められます。" />
+    <meta name="twitter:image" content="https://lang.integ.life/og-lingulet.png" />
+    <title>実際のスペイン語レッスンを試す · Lingulet</title>
+    <style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5f0e6;color:#24211d;font:18px/1.5 system-ui,sans-serif;text-align:center}main{max-width:34rem;padding:2rem}a{color:#0f625e}</style>
+  </head>
+  <body>
+    <main><p>5分間のスペイン語初回レッスンを開いています…</p><p><a id="continue" href="../../../../../#/course-preview?target=es&unit=1">レッスンへ進む</a></p></main>
+    <script>
+      const incoming = new URLSearchParams(window.location.search);
+      const ref = incoming.get("ref");
+      const share = incoming.get("share");
+      const destination = new URL("../../../../../", window.location.href);
+      const route = new URLSearchParams({ target: "es", unit: "1" });
+      route.set("sharedUnit", "9");
+      if (ref && /^[a-zA-Z0-9-]{1,64}$/.test(ref)) {
+        route.set("challenge", "1");
+        route.set("ref", ref);
+        if (share && /^[0-9a-f]{8}-[0-9a-f]{4}-[1-8][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i.test(share)) route.set("share", share);
+      }
+      destination.search = "";
+      destination.hash = "/course-preview?" + route.toString();
+      document.getElementById("continue").href = destination.href;
+      window.location.replace(destination.href);
+    </script>
+  </body>
+</html>
