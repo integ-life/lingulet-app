@@ -2,8 +2,8 @@
   "schema": "integ.life/build-version/v1",
   "repository": "integ-life/lingulet",
   "service": "lang.integ.life",
-  "version": "git-c4ab2e87f3ed",
-  "commit": "c4ab2e87f3ed",
-  "builtAt": "2026-08-12T22:05:56.436Z",
+  "version": "git-4bbe53dfe88c",
+  "commit": "4bbe53dfe88c",
+  "builtAt": "2026-08-12T22:27:08.482Z",
   "dirty": false
 }
