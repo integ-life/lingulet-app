@@ -22,7 +22,7 @@
 //   lesson in progress keeps running; the new release is used on the next load.
 //
 // scripts/generate-service-worker.mjs replaces the BUILD line at build time.
-const BUILD = {"release":"b82825b7b5512888","entry":"/assets/index-CFERlQIH.js","precache":["assets/index-CFERlQIH.js","assets/index-CgCgHZR0.css","assets/page-analytics-59514a123a4c.js"]};
+const BUILD = {"release":"bd373f2ff6a9e215","entry":"/assets/index-BwSzeP-_.js","precache":["assets/index-BwSzeP-_.js","assets/index-C6iLuAEI.css","assets/page-analytics-59514a123a4c.js"]};
 
 const CACHE_PREFIX = "lingulet-";
 const RELEASE_CACHE_PREFIX = "lingulet-release-";
